@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&family=Lobster&family=Courgette&family=Lobster+Two&family=Great+Vibes&family=Dancing+Script&family=Great+Vibes&family=Oleo+Script&family=Marck+Script&family=Parisienne&family=Poppins&family=Noto+Sans+SC&family=Tangerine&display=swap');
+
+
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/* Menu Bar */
+
+.menu-bar
+{
+  background: rgb(0,100,0);
+  text-align: center;
+ 
+}
+
+/* Displays the menu side by side in-line flex */
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+.menu-bar ul li
+{
+  width: 185px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+.active, .menu-bar ul li:hover
+{
+  background: #2bab0d;
+  border-radius: 3px;
+}
+
+.menu-bar .fa
+{
+  margin-left: 8px;
+}
+
+.menu-bar .fas
+{
+  margin-left: 8px;
+}
+
+.sub-menu-1
+{
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+  display: block;
+  position: absolute;
+  background: rgb(0, 100, 0);
+  margin-top: 10px;
+  margin-left: -10px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin: 10px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+  width: 200px;
+  padding: 10px; /*Adjusts the width of the pull down menu*/
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;/*No border*/
+  text-align: left; /*Aligns the li text left*/
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+  color: #b2ff00;
+}
+
+.fa-angle-left
+{
+  float: left;
+}
+
+.sub-menu-2
+{
+  display: none;
+}
+
+.hover-me:hover .sub-menu-2
+{
+  position: absolute;
+  display: block;
+  margin-top: -38px;
+  margin-left: -250px;
+  background-color: rgba(0,100,0);
+}
+
+.hover-me:hover .sub-menu-3
+{
+  position: absolute;
+  display: block;
+  margin-top: -38px;
+  margin-left: 160px;
+  background-color: rgba(0,100,0);
+}
+
+                /* Close Menu Bar */
+
+/* ======================================================================= */
+
+body.trainingaircraftbody
+
+{
+  background-image: url(imagesrhodesia1/sky2.jpg);
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
+  /* font-family: sans-serif; */
+}
+
+.title-label, .title-label1, .title-label2,
+.title-label3
+{
+  position: absolute;
+  z-index: -9;
+  color: white;
+  margin-top: 5px;
+  margin-left: 45px;
+}
+
+
+.title-label4, .title-label5,
+.title-label6,.title-label7
+{
+  position: absolute;
+  z-index: 9;
+  color: white;
+  margin-top: 135px;
+  margin-left: 45px;
+}
+
+.h1training
+{
+  padding: 5px;
+  margin: 10px;
+  color: #556B2F;
+  text-align: center;
+}
+
+.viddiv
+{
+  margin-left: 40px;
+  height:160px;
+  width:280px;
+  border: 3px solid blue;
+}
+
+h2
+{
+  color: #556B2F;
+  margin: 10px;
+  padding: 0px;
+}
+
+
+h2::first-letter
+{
+  font-size: 2rem;
+  color:green;
+}
+
+p
+{
+  margin: 15px;
+  padding: 0px;
+  font-size:20px;
+}
+
+
+/* ======================================================================= */
+
+    /* Footer */
+
+/* p.allfooter */
+p.allfooter
+{
+  position: fixed;
+  padding: 1px 10px 50px 10px;
+  bottom: 0;
+  width: 100%;
+
+  /* Height of the footer*/
+  height: 10px;
+  text-align: center;
+  background: black;
+  color: cadetblue;
+
+}
+
+/* p.allfooter::first-letter */
+p.allfooter::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px red;
+}
+
+                    /* Close Index Footer */
+
+/* ======================================================================= */
+
+
+                /* UTILITY CLASSES */
+
+.offscreen
+{
+position: absolute;
+left: -10000px;
+}
+
+.nowrap
+{
+white-space: nowrap;
+}
+
+p.center
+{
+font-size: 1.7em;
+text-align: center;
+padding-top: 20px;
+}
+
+
+          /* Close UTILITY CLASSES */
+
+/* ======================================================================= */
+
+/* .hover_over_the_link.nolink */
+.hover_over_the_link.nolink
+{
+  position: relative;
+}
+
+/* .hover_over_the_link a.nolink span */
+.hover_over_the_link a.nolink span
+{
+  position:absolute;
+  display:none;
+  z-index:99;
+}
+
+/* .hover_over_the_link a:hover  span  */
+.hover_over_the_link a:hover  span 
+{
+  display:block;
+  width:550px;/*Width of the tooltip*/
+  padding: 20px 60px 20px 8px;
+  color: yellow;/*Text colour*/
+  background: #535663;
+  font-size: 20px;
+  text-decoration: none;
+  position: absolute;
+  border-radius: 15px;/*Border radius*/
+  /* border: 5px solid rgb(0, 0, 0); */
+  /* top: 65px; */
+  text-indent: 5px;
+  margin-left: 600px;
+}
+
+/* .skycatcherimage */
+.skycatcherimage
+{
+  position: relative;
+  overflow: hidden;
+  width: 200px;/*Width of img*/
+  height: 200px;/*Height of img*/
+  border-radius: 50%;/*Radius of img*/
+  border: 2px solid gold;
+  shape-outside: circle();/*Shapes the text into circle*/
+  float:left;/*Floats the text to the left*/
+  margin: 10px;/*Margin from img to text*/
+}
+

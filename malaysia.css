@@ -1,0 +1,1147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&family=Lobster&family=Courgette&family=Lobster+Two&family=Great+Vibes&family=Dancing+Script&family=Great+Vibes&family=Oleo+Script&family=Marck+Script&family=Parisienne&family=Poppins&family=Noto+Sans+SC&family=Tangerine&display=swap');
+
+
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+                      /* Menu Bar */
+
+/* Menu Bar background colour */
+  .menu-bar
+  {
+    background: rgb(0,100,0);
+    text-align: center;   
+  }
+
+  /* Displays the menu side by side in-line flex */
+  .menu-bar ul
+  {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+  }
+
+  /* Spans the width of the menu bar across the page */
+  .menu-bar ul li
+  {
+    width: 160px;/*Adjusts the width of the menu 205*/
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .menu-bar ul li a
+  {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .active, .menu-bar ul li:hover
+  {
+    background: #2bab0d;
+    border-radius: 3px;
+  }
+
+  .menu-bar .fa
+  {
+    margin-left: 8px;
+  }
+
+  .menu-bar .fas
+  {
+    margin-left: 8px;
+  }
+
+  .sub-menu-1
+  {
+    display: none;
+  }
+
+  .menu-bar ul li:hover .sub-menu-1
+  {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 10px;
+    margin-left: -10px;
+
+  }
+
+  .menu-bar ul li:hover .sub-menu-1 ul
+  {
+    display: block;
+    margin: 10px;
+
+  }
+
+  /* Adjusts the width of pull down li's */
+  .menu-bar ul li:hover .sub-menu-1 ul li
+  {
+    width: 200px;/* 300px */
+    padding: 10px; /*Adjusts the width of the pull down munu*/
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;/*No border*/
+    text-align: left; /*Aligns the li text left*/
+  }
+
+  .menu-bar ul li:hover .sub-menu-1 ul li:last-child
+  {
+    border-bottom: none;
+  }
+
+  .menu-bar ul li:hover .sub-menu-1 ul li a:hover
+  {
+    color: #b2ff00;
+  }
+
+  .fa-angle-left
+  {
+    float: left;
+  }
+
+  .sub-menu-2
+  {
+    display: none;
+  }
+
+  .hover-me:hover .sub-menu-2
+  {
+    position: absolute;
+    display: block;
+    margin-top: -38px;
+    margin-left: -250px;
+    background-color: rgba(0,100,0);
+  }
+
+  .hover-me:hover .sub-menu-3
+  {
+    position: absolute;
+    display: block;
+    margin-top: -38px;
+    margin-left: 160px;
+    background-color: rgba(0,100,0);
+  }
+
+                  /* Close Menu Bar */
+/* ======================================================================= */
+
+
+                      /* body*/
+
+body.malaysiabody
+{
+  background-image: linear-gradient( to right,lightseagreen, lightgreen); 
+}
+                /*Close body*/
+/* ======================================================================= */
+
+            /* Hero */
+
+  /* section.hero */
+  section.hero
+  {
+    position: relative;
+  }
+ 
+  /* ALL showWelcome */
+  @keyframes showWelcome
+  {
+    0%
+    {
+    top: -20px;
+    transform: skew(0deg, -5deg) scaleY(0);
+    }
+ 
+    80%
+    {
+    top: 30px;
+    transform: skew(10deg, -5deg) scaleY(1.2);
+    }
+ 
+    100%
+    {
+    top: 20px;
+    transform: skew(-10deg, -5deg) scaleY(1);
+    }
+  }
+ 
+ 
+ /* HERO h2.hero__h2 */
+  h2.hero__h2
+  {
+ color: black;
+ padding: 0.25em 0.5em;
+ text-shadow: 2px 2px 5px var(--BORDER-COLOR);
+ position: absolute;
+ top: -200px;
+ left: 20px;
+ animation: showWelcome 2s ease-in-out 1s forwards;
+  }
+ 
+  /* .hero__h2::first-letter */
+  .hero__h2::first-letter
+  {
+  font-size: 50px;
+  color: blue;
+  text-shadow: 2px 2px orange;
+  }
+ 
+                         /* Close Hero */
+ 
+ /* ======================================================================= */
+ 
+            /*Main Image (me)*/
+
+/* img.imgclassme3 (Main image) */
+img.imgclassme3
+{
+width: 250px;
+margin: 25px;/*Margin from Prince to text*/
+border: 3px solid white;
+box-shadow: 3px 3px grey;
+border-radius: 50%;
+shape-outside: circle();/*Shapes the text into circle*/
+float:left;/*Floats the text to the left*/
+padding: 15px;/*Pushes the border out */
+}
+
+               /* Close Main Image (me) */
+
+/* ======================================================================= */
+
+
+
+                  /*H1*/
+/* .topheader */
+
+.topheader
+ { 
+  color: white;
+  background: linear-gradient(to right, grey, black);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2rem;
+ } 
+                /*Close h1*/
+
+
+
+/* ======================================================================= */
+
+                    /* span */
+
+span
+{
+  font-size: 2.0rem;
+  color: blue; 
+}
+
+
+                /*Close span */
+
+/* ======================================================================= */
+
+                  /* Tooltip Images */
+
+/* Tooltip kualalumpurimage */
+.kualalumpurimage 
+{
+  position: relative;
+  overflow: hidden;
+  width: 200px;/*Width of img*/
+  height: 200px;/*Height of img*/
+  border-radius: 50%;/*Radius of img*/
+  border: 2px solid gold;
+  shape-outside: circle();/*Shapes the text into circle*/
+  float:left;/*Floats the text to the left*/
+  margin: 10px;/*Margin from img to text*/ 
+}
+            /* Close Tooltip Images */
+/* ======================================================================= */
+
+                            /* Tooltip */
+
+
+.nolink
+{
+  /* position: absolute; */
+  /* top: 81%; *//* Moves Kuala Lumpur down */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  color: blue;
+  font-size: 1.5rem
+}
+
+/* .hover_over_the_link.nolink */
+.hover_over_the_link.nolink 
+{
+  position: relative;
+}
+
+/* .hover_over_the_link a.nolink span */
+.hover_over_the_link a.nolink  span
+{
+  position:absolute;
+  display:none;
+  z-index:99;
+}
+
+
+/* .hover_over_the_link a:hover  span  */
+.hover_over_the_link a:hover  span 
+{
+  display:block;
+  width:550px;/*Width of the tooltip*/
+  padding: 20px 60px 20px 8px;
+  color: yellow;/*Text colour*/
+  background: #535663;
+  font-size: 20px;
+  text-decoration: none;
+  position: absolute;
+  border-radius: 15px;/*Border radius*/
+  border: 5px solid rgb(0, 0, 0);
+  /* top: 65px; */
+  text-indent: 5px;
+  margin-left: 180px
+}
+
+
+.nolink1
+{
+  /* position: absolute; */
+  /* top: 81%; *//* Moves Kuala Lumpur down */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  color: blue;
+  font-size: 1.5rem
+}
+
+/* .hover_over_the_link.nolink */
+.hover_over_the_link1.nolink1
+{
+  position: relative;
+}
+
+/* .hover_over_the_link a.nolink span */
+.hover_over_the_link1 a.nolink1 span
+{
+  position: absolute;
+  display:none;
+  z-index:99;
+}
+
+
+/* .hover_over_the_link a:hover  span  */
+.hover_over_the_link1 a.nolink1:hover  span 
+{
+  display:block;
+  width:550px;/*Width of the tooltip*/
+  padding: 20px 60px 20px 8px;
+  color: yellow;/*Text colour*/
+  background: #535663;
+  font-size: 20px;
+  text-decoration: none;
+  position: absolute;
+  border-radius: 15px;/*Border radius*/
+  border: 5px solid rgb(0, 0, 0);
+  /* top: 65px; */
+  text-indent: 5px;
+  margin-left: 1020px
+}
+
+
+
+
+
+.container
+{
+  width: 1000px;
+  height: 75px;
+  /* background: rgba(0,0,100, .1); */
+  margin-left: 21%;  
+  padding-left: 55px;
+  margin-top: 20px;/* Moves whole container down */
+  border: 3px dotted black;
+  background-image: url(images/clouds.jpg);
+  background-size: cover;
+}
+
+.coastalclass
+{
+  color: brown;
+  margin-left: -10%;
+  text-align: center; 
+}
+
+.container1
+{
+  width: 1000px;
+  height: 75px;
+  /* background: rgba(0,0,100, .1); */
+  margin-left: 21%;  
+  padding-left: 40px;
+  border: 3px dotted black;
+  background-image: url(images/clouds.jpg);
+  background-size: cover;
+}
+
+.coastalclass1
+{
+  color: brown;
+  margin-left: -3%;
+  text-align: center; 
+}
+
+.container2
+{
+  width: 1000px;
+  height: 75px;
+  /* background: rgba(0,0,100, .1); */
+  margin-left: 21%; 
+  padding-left: 10px;
+  border: 3px dotted black;
+  background-image: url(images/clouds.jpg);
+  background-size: cover;
+}
+
+
+
+.coastalclass2
+{
+  color: brown;
+  margin-left: -3%;
+  text-align: center; 
+}
+
+
+ul 
+{
+  display: inline-flex;
+  list-style: none;
+  margin-left: -10px;
+}
+
+ul li.east a
+{
+  font-size: 20px;
+  color: blue;
+  margin: 5px;
+}
+
+.cameron
+{
+  font-size: 1.5rem;
+  color: brown;
+  margin: 10px;
+}
+
+.cameron::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.aquaria
+{
+  font-size: 1.5rem;
+  color: brown;
+  margin: 10px;
+}
+
+
+.aquaria::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.melaka
+{
+  font-size: 1.5rem;
+  color: brown;
+  margin: 10px;
+}
+
+.melaka::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+
+.turtle
+{
+  font-size: 1.5rem;
+  color: brown;
+  margin: 10px;
+}
+
+.turtle::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+/*==============================================*/
+          /* Food Prices-1 */
+
+.foodprices-1
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  /* background-image: url(images/clouds.jpg);
+  background-size: cover; */
+  background: grey;
+}
+
+.foodprices-1::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+
+/*==============================================*/
+          /* Capital Punishment-2 */
+
+/* capital-2 link to web  */
+.capital-2link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+
+.capital-2
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.capital-2::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+#capitalcentertextclass-2
+{
+/* margin-left: 30%; */
+
+}
+
+.capital-2drugsimage
+{
+  color: blue;
+}
+/*==============================================*/
+          /* Cameron Highlands-3 */
+
+/* cameron-3 link to web  */
+.cameron-3link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.cameron-3
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.cameron-3::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.cameron-3historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.cameron-3generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.cameron-3cactusclass
+{
+color: blue;
+}
+
+        /* Close Cameron Highlands-3 */
+/*==============================================*/
+
+                /* Langkawi-4 */
+
+/* langkawi-4 link to web  */
+.langkawi-4link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.langkawi-4
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.langkawi-4::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.langkawi-4historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.langkawi-4generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.langkawi-4skybridgeclass
+{
+  color: blue;
+}
+
+        /* Close Langkawi-4 */
+/*==============================================*/
+
+              /* Menara Tower-5 */
+
+/* menara-5 link to web  */
+.menara-5link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.menara-5
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.menara-5::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.menara-5historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.menara-5generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+        /* Close Menara-5 */
+/*==============================================*/
+
+            /* Sunway Lagoon-6 */
+
+/* sunway-6 link to web  */
+.sunway-6link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.sunway-6
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.sunway-6::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.sunway-6historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.sunway-6generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.sunway-6flowriderclass
+{
+  color: blue;
+}
+
+        /* Close Sunway Lagoon-6 */
+/*==============================================*/
+
+            /* Aquaria-7 */
+
+/* aquaria-7 link to web  */
+.aquaria-7link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.aquaria-7
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.aquaria-7::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.aquaria-7historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.aquaria-7generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+        /* Close Aquaria-7 */
+/*==============================================*/
+
+              /* Melaka-8 */
+
+/* aquaria-7 link to web  */
+.melaka-8link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.melaka-8
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.melaka-8::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.melaka-8historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.melaka-8generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+        /* Close Melaka-8 */
+/*==============================================*/
+
+            /* Turtle-9 */
+
+/* aquaria-7 link to web  */
+.turtle-9link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.turtle-9
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.turtle-9::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.turtle-9historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.turtle-9generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+
+
+        /* Close Turtle-9 */
+/*==============================================*/
+
+             /* KLCC-10 */
+
+/* klcc-10 link to web  */
+.klcc-10link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.klcc-10
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.klcc-10::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.klcc-10historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.klcc-10generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+          /* Close KLCC-10 */
+/*==============================================*/
+
+
+            /* Chinatown-11 */
+
+/* chinatown-11 link to web  */
+.chinatown-11link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.chinatown-11
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.chinatown-11::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.chinatown-11historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.chinatown-11generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+          /* Close Chinatown-11 */
+
+/*==============================================*/
+
+          /* Orangutan-12 */
+
+/* orangutan-12 link to web  */
+.orangutan-12link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.orangutan-12
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.orangutan-12::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.orangutan-12historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+
+.orangutan-12generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+          /* Close Orangutan-12 */
+
+/*==============================================*/
+
+        /* Botanical gardens-13 */
+
+/* botanical-13 link to web  */
+.botanical-13link
+{
+  font-size: 1.5rem;
+  color: blue;
+  margin: 10px;
+  text-decoration: none;
+  /* margin-left: 860px; */
+  text-align: center;
+}
+
+.botanical-13
+{
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+  padding-left: 5px;
+  border: 3px dotted black;
+  background: grey;
+}
+
+.botanical-13::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px orange;
+}
+
+.botanical-13historyspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+  
+
+}
+
+.botanical-13generalspan
+{
+  font-size: 2.0rem;
+  text-decoration: underline;
+}
+          /* Close Botanical gardens-13 */
+
+/*==============================================*/
+
+
+.babyturtles, .selinganclass, .hatcheries, .skybridge, .orangutanclass, .botanical, .birdpark
+{
+  color: blue;
+}
+
+  
+.menaratowerclass
+{
+  color: blue;
+}
+
+
+.countryheightsclass
+{
+  color: blue;
+}
+
+.h1cameron
+{
+  margin-left: 2px;
+  text-decoration: underline;
+  
+}
+
+hr
+{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15px;
+  color: gold;
+  background-color: teal;
+}
+/*
+======================================================================= */
+
+            /* Footer */
+
+/* p.allfooter */
+p.allfooter
+{
+  position: fixed;
+  padding: 1px 10px 50px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 10px;
+  text-align: center;
+  background: black;
+  color: cadetblue;
+
+}
+
+/* p.allfooter::first-letter */
+p.allfooter::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px red;
+}
+
+                    /* Close Footer */
+
+/* ======================================================================= */
+
+
+              /* UTILITY CLASSES */
+
+.offscreen
+{
+position: absolute;
+left: -10000px;
+}
+
+.nowrap
+{
+white-space: nowrap;
+}
+
+p.center
+{
+  font-size: 1.7em;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+}
+
+          /* Close UTILITY CLASSES */
+
+/* ======================================================================= */

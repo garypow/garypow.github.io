@@ -1,0 +1,39 @@
+body
+{
+  background-image: url(images/sky2.jpg);
+  /* background-image: url(images/logbook2.jpeg); */
+  background-size: 100%;
+  background-position: absolute;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+}
+
+.instruments-image
+{
+  width: 250px;
+  float: left;
+  shape-outside: circle(50%);
+  margin-right: 2rem;
+}
+
+.logbook
+{
+  font-size: 20px;
+  color: #556B2F;
+}
+
+.p
+{
+  font-size: 20px;
+  color: black;
+}
+
+a:
+{
+
+}
+
+h3
+{
+  color: #556B2F;
+}

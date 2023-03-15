@@ -1,0 +1,3111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&family=Lobster&family=Courgette&family=Lobster+Two&family=Great+Vibes&family=Dancing+Script&family=Great+Vibes&family=Oleo+Script&family=Marck+Script&family=Parisienne&family=Poppins&family=Noto+Sans+SC&family=Tangerine&display=swap');
+
+*
+{
+  padding: 0;
+  margin: 0;/*Comment*/
+  box-sizing: border-box;
+}
+
+                            /* Menu Bar */
+
+.menu-bar
+{
+background: rgb(0,100,0);
+text-align: center;
+
+}
+
+.menu-bar ul
+{
+
+display: inline-flex;
+list-style: none;
+color: #fff;
+}
+
+.menu-bar ul li
+{
+width: 175px;
+margin: 10px;
+padding: 10px;
+}
+
+.menu-bar ul li a
+{
+text-decoration: none;
+color: #fff;
+}
+
+.active, .menu-bar ul li:hover
+{
+background: #2bab0d;
+border-radius: 3px;
+}
+
+.menu-bar .fa
+{
+margin-left: -8px;
+}
+
+.menu-bar .fas
+{
+margin-left: -8px;
+}
+
+.sub-menu-1
+{
+display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+display: block;
+position: absolute;
+background: rgb(0, 100, 0);
+margin-top: 10px;
+margin-left: -10px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+display: block;
+margin: 10px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+width: 200px;
+padding: 10px; /*Adjusts the width of the pull down munu*/
+border-bottom: 1px dotted #fff;
+background: transparent;
+border-radius: 0;/*No border*/
+text-align: left; /*Aligns the li text left*/
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+color: #b2ff00;
+}
+
+.fa-angle-left
+{
+float: left;
+}
+
+.sub-menu-2
+{
+display: none;
+}
+
+.hover-me:hover .sub-menu-2
+{
+position: absolute;
+display: block;
+margin-top: -38px;
+margin-left: -250px;
+background-color: rgba(0,100,0);
+}
+
+.hover-me:hover .sub-menu-3
+{
+position: absolute;
+display: block;
+margin-top: -38px;
+margin-left: 160px;
+background-color: rgba(0,100,0);
+}
+
+                        /* Close Menu Bar */
+
+/* ======================================================================= */
+
+                        /* BODY*/
+
+
+body.carouselclass
+{
+  position: fixed;
+  background: #2f4f4f;
+  /* margin: 0; */
+  /* position: relative; */
+  inset: 0;
+  /* bottom: -20px; */
+}
+
+                        /* Close BODY*/
+/* ======================================================================= */
+
+
+                      /* H1*/
+
+h1
+{
+
+  background: linear-gradient(to right, white, grey);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  font-family: 'Poppins';
+
+  /* margin-bottom: 0; */
+  /* position: absolute; */
+  margin-top: -10px;
+   /* left: 43%; */
+  /* z-index: 1; */
+}
+                        /* Close H1*/
+
+/* ======================================================================= */
+
+
+
+.carousel-wrapper
+{
+  top: -52px; /*Moves the whole wrapper down*/
+  height: 500px;
+  position: relative;
+  width: 800px;
+  display: block;
+  margin: 50px auto ;
+  border: 2px solid black;
+  z-index: -1;
+}
+
+
+.carousel-item
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.arrow
+{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+
+}
+
+
+.arrow-prev
+{
+  left: -50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+
+}
+
+
+.arrow-next
+{
+  right: -50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+
+[id^= "item"]
+{
+  display: none;
+}
+
+
+
+
+.item-1 /*Thinking*/
+{
+  z-index: 2;
+  opacity: 1;
+  background: url('imagesrhodesia1/thinking3.png');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+
+.item-2 /*Balancing Rocks*/
+{
+  background: url('imagesrhodesia1/bal.jpg');
+  background-size: cover;
+}
+
+
+.item-3 /*Baobab Tree*/
+{
+  background: url('imagesrhodesia1/baobab.jpg');
+  background-size: cover;
+}
+
+
+.item-4 /*Ruins*/
+{
+  background: url('imagesrhodesia1/ruins.jpg');
+  background-size: cover;
+}
+
+
+.item-5 /*Air Rhodesia*/
+{
+
+  background: url('imagesrhodesia1/plane.jpg');
+  background-size: cover;
+}
+
+
+.item-6 /*Wedding*/
+{
+  background: url('imagesrhodesia1/family1.jpeg');
+  background-size: cover;
+}
+
+
+.item-7 /*Ellis Robins*/
+{
+  background: url('imagesrhodesia1/ellissign.jpg');
+  background-size: cover;
+}
+
+
+.item-8 /*Karen*/
+{
+  background: url('imagesrhodesia1/karen.jpeg');
+  background-size: cover;
+}
+
+
+.item-9 /*Matches*/
+{
+  background: url('imagesrhodesia1/matches.jpg');
+  background-size: cover;
+}
+
+
+.item-10 /*Leslie1*/
+{
+  background: url('imagesrhodesia1/leslie2.jpg');
+  background-size: cover;
+}
+
+
+.item-11 /*Girls School*/
+{
+  background: url('imagesrhodesia1/girls.jpg');
+  background-size: cover;
+}
+
+
+.item-12 /*Castle Lager*/
+{
+  background: url('imagesrhodesia1/castle.jpeg');
+  background-size: 800px 600px;
+  background-repeat: no-repeat;
+}
+
+
+.item-13 /*Haddon & Sly*/
+{
+  background: url('imagesrhodesia1/haddon.jpg');
+  background-size: cover;
+}
+
+
+.item-14 /*Mabelreign*/
+{
+  background: url('imagesrhodesia1/mabelreign.jpeg');
+  background-size: cover;
+}
+
+
+.item-15 /*airport*/
+{
+  background: url('imagesrhodesia1/airport1.jpg');
+  background-size: cover;
+}
+
+
+.item-16 /*Kariba*/
+{
+  background: url('imagesrhodesia1/kariba.jpg');
+  background-size: cover;
+}
+
+
+.item-17 /*Police*/
+{
+  background: url('imagesrhodesia1/police.png');
+  background-size: cover;
+}
+
+
+.item-18 /*Sinoia Caves*/
+{
+  background: url('imagesrhodesia1/sin.jpg');
+  background-size: cover;
+}
+
+
+.item-19 /*Victoria Falls*/
+{
+  background: url('imagesrhodesia1/vic.jpg');
+  background-size: cover;
+}
+
+
+.item-20 /*Umtali*/
+{
+  background: url('imagesrhodesia1/umtali.jpg');
+  background-size: cover;
+}
+
+
+.item-21 /*Chimanimani Hotel*/
+{
+  background: url('imagesrhodesia1/chim.jpg');
+  background-size: cover;
+}
+
+
+.item-22 /*Lion Lager*/
+{
+  background: url('imagesrhodesia1/lion.jpg');
+  background-size: cover;
+  background-size: 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-23 /*Train Station*/
+{
+  background: url('imagesrhodesia1/trainstation.jpg');
+  background-size: cover;
+}
+
+
+.item-24 /*Rhodesian Railways*/
+{
+  background: url('imagesrhodesia1/rail.jpg');
+  background-size: cover;
+}
+
+
+.item-25 /*Woolworths*/
+{
+  background: url('imagesrhodesia1/woolworths.jpg');
+  background-size: cover;
+}
+
+
+.item-26 /*Victoria Falls 1*/
+{
+  background: url('imagesrhodesia1/vic1.jpg');
+  background-size: cover;
+}
+
+
+.item-27 /*Shona*/
+{
+  background: url('imagesrhodesia1/shona.jpeg');
+  background-size: cover;
+}
+
+
+.item-28 /*Rose*/
+{
+  background: url('imagesrhodesia1/rose.jpg');
+  background-size: cover;
+}
+
+
+.item-29 /*Rose1*/
+{
+  background: url('imagesrhodesia1/rose1.jpg');
+  background-size: cover;
+}
+
+
+.item-30 /*Steam Train*/
+{
+  background: url('imagesrhodesia1/rail1.jpg');
+  background-size: cover;
+}
+
+
+.item-31 /*Police Car*/
+{
+  background: url('imagesrhodesia1/police1.jpg');
+  background-size: cover;
+}
+
+
+.item-32 /*jameson*/
+{
+  background: url('imagesrhodesia1/jameson.jpg');
+  background-size: cover;
+}
+
+
+.item-33 /*Mermaids*/
+{
+  background: url('imagesrhodesia1/mermaids.jpg');
+  background-size: cover;
+}
+
+
+.item-34 /*Elephant*/
+{
+  background: url('imagesrhodesia1/elephant.jpg');
+  background-size: cover;
+}
+
+
+.item-35 /*braai*/
+{
+  background: url('imagesrhodesia1/braai.jpg');
+  background-size: cover;
+}
+
+
+.item-36 /*57th Avenue*/
+{
+  background: url('imagesrhodesia1/57th.jpg');
+  background-size: cover;
+}
+
+
+.item-37 /*Airport*/
+{
+  background: url('imagesrhodesia1/airport.jpg');
+  background-size: cover;
+}
+
+
+.item-38 /*Barbours*/
+{
+  background: url('imagesrhodesia1/barbours.jpg');
+  background-size: cover;
+}
+
+
+.item-39 /*BSAP1*/
+{
+  background: url('imagesrhodesia1/bsap.jpg');
+  background-size: cover;
+}
+
+
+.item-40 /*Castle2*/
+{
+  background:
+   url('imagesrhodesia1/castle.jpeg');
+   background-position: center;
+   background-repeat: no-repeat;
+  /* background-size: cover; */
+}
+
+
+.item-41 /*Cecil Square*/
+{
+  background: url('imagesrhodesia1/cecil.jpg');
+  background-size: cover;
+}
+
+
+.item-42 /*Church*/
+{
+  background: url('imagesrhodesia1/church.jpg');
+  background-size: cover;
+}
+
+
+.item-43 /*Dollars*/
+{
+  background: url('imagesrhodesia1/dollars.jpg');
+  background-size: cover;
+}
+
+
+.item-44 /*Dollars1*/
+{
+  background: url('imagesrhodesia1/dollars1.jpg');
+  background-size: cover;
+}
+
+
+.item-45 /*Chinese5*/
+{
+
+  background: url('imagesrhodesia1/chinese5.png');
+  background-size: cover;
+}
+
+
+.item-46 /*Flame Lilly3*/
+{
+  background: url('imagesrhodesia1/flamelilly3.png');
+  background-size: cover;
+}
+
+
+.item-47 /*Hallinbury School*/
+{
+  background: url('imagesrhodesia1/hallingbury.jpg');
+  background-size: cover;
+}
+
+
+.item-48 /*Herald*/
+{
+  background: url('imagesrhodesia1/Herald.jpg');
+  background-size: cover;
+}
+
+
+.item-49 /*Jackaranda*/
+{
+  background: url('imagesrhodesia1/jackaranda.jpg');
+  background-size: cover;
+}
+
+
+.item-50 /*Prickly Pear*/
+{
+  background: url('imagesrhodesia1/pricklypear.jpg');
+  background-size: cover;
+}
+
+
+.item-51 /*Ice Cream*/
+{
+  background: url('imagesrhodesia1/icecream.jpg');
+  background-size: cover;
+}
+
+
+.item-52 /*Lottery*/
+{
+  background: url('imagesrhodesia1/lottery.jpeg');
+  background-size: cover;
+}
+
+
+.item-53 /*M/reign Pool*/
+{
+  background: url('imagesrhodesia1/mabelreignpool.jpeg');
+  background-size: cover;
+}
+
+
+.item-54 /*Meikles*/
+{
+  background: url('imagesrhodesia1/meikles.jpg');
+  background-size: cover;
+}
+
+
+.item-55 /*Mugabe*/
+{
+  background: url('imagesrhodesia1/mugabe.jpg');
+  background-size: cover;
+}
+
+
+.item-56 /*Nu-Way*/
+{
+  background: url('imagesrhodesia1/nuway.jpg');
+  background-size: cover;
+}
+
+
+.item-57 /*Inyanga*/
+{
+  background: url('imagesrhodesia1/nyanga.jpg');
+  background-size: cover;
+}
+
+
+.item-58 /*Pearl*/
+{
+  background: url('imagesrhodesia1/pearl.jpg');
+  background-size: cover;
+}
+
+
+.item-59 /*Petrol Pump*/
+{
+  background: url('imagesrhodesia1/petrolpump.jpg');
+  background-size: cover;
+}
+
+
+.item-60 /*Penny*/
+{
+
+  background: url('imagesrhodesia1/penny.jpg');
+  background-size: cover;
+  background-size: 540px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-61 /*Tikki*/
+{
+  background: url('imagesrhodesia1/tikki.jpg');
+  background-size: cover;
+  background-size: 500px 580px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-62 /*museum*/
+{
+  background: url('imagesrhodesia1/museum.jpg');
+  background-size: cover;
+}
+
+
+.item-63 /*firststreet*/
+{
+  background: url('imagesrhodesia1/firststreet.jpg');
+  background-size: cover;
+}
+
+
+.item-64 /*fereday*/
+{
+  background: url('imagesrhodesia1/fereday.jpg');
+  background-size: cover;
+}
+
+
+.item-65 /*granadilla*/
+{
+  background: url('imagesrhodesia1/granadilla2.jpg');
+  background-size: cover;
+}
+
+
+.item-66 /*gemsquash*/
+{
+  background: url('imagesrhodesia1/gemsquash.jpg');
+  background-size: cover;
+  background-size: 600px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-67 /*hubbly*/
+{
+  background: url('imagesrhodesia1/hubbly.jpg');
+  background-size: cover;
+  background-size: 800px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-68 /*koolaid*/
+{
+  background: url('imagesrhodesia1/koolaid1.jpg');
+  background-size: cover;
+  background-size: 800px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-69 /*mazoe*/
+{
+  background: url('imagesrhodesia1/mazoe.jpg');
+  background-size: cover;
+  background-size: 700px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-70 /*panasonic*/
+{
+  background: url('imagesrhodesia1/panasonic1.png');
+  background-size: cover;
+  background-size: 700px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-71 /*george*/
+{
+  background: url('imagesrhodesia1/george.jpg');
+  background-size: cover;
+}
+
+
+.item-72 /*inyan*/
+{
+  background: url('imagesrhodesia1/inyamountaintroutbeckinn.jpg');
+  background-size: cover;
+}
+
+.item-73 /*billion*/
+{
+  background: url('imagesrhodesia1/billion.jpg');
+  background-size: cover;
+}
+
+
+.item-74 /*tartar*/
+{
+  background: url('imagesrhodesia1/creamtart1.png');
+  background-size: cover;
+}
+
+
+.item-75 /*chibuku*/
+{
+  background: url('imagesrhodesia1/chibuku.jpg');
+  background-size: cover;
+  background-size: 400px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-76 /*carling*/
+{
+  background: url('imagesrhodesia1/carling.jpg');
+  background-size: cover;
+  background-size: 400px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+
+.item-77 /*prefab*/
+{
+  background: url('imagesrhodesia1/prefab.jpg');
+  background-size: cover;
+}
+
+
+.item-78 /*andrews*/
+{
+  background: url('imagesrhodesia1/andrews2.png');
+  background-size: cover;
+  background-size: 500px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-79 /*camp*/
+{
+  background: url('imagesrhodesia1/camp2.jpg');
+  background-size: cover;
+  background-size: 540px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-80 /*germ*/
+{
+  background: url('imagesrhodesia1/germ.jpg');
+  background-size: cover;
+  background-size: 540px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-81 /*vim*/
+{
+  background: url('imagesrhodesia1/vim.jpg');
+  background-size: cover;
+  background-size: 540px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-82 /*baby*/
+{
+  background: url('imagesrhodesia1/babycham.jpg');
+  background-size: cover;
+  background-size: 540px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+
+}
+
+
+.item-83 /*pk*/
+{
+  background: url('imagesrhodesia1/pk.jpg');
+  background-size: cover;
+}
+
+
+.item-84 /*quink*/
+{
+  background: url('imagesrhodesia1/quink.jpg');
+  background-size: cover;
+  background-size: 540px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-85 /*blade*/
+{
+  background: url('imagesrhodesia1/blade.jpg');
+  background-size: cover;
+  background-size: 540px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-86 /*turn*/
+{
+  background: url('imagesrhodesia1/turntable.jpg');
+  background-size: cover;
+}
+
+
+.item-87 /*mateus*/
+{
+  background: url('imagesrhodesia1/mateus.jpg');
+  background-size: cover;
+  background-size: 540px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-88 /*bilharzia*/
+{
+  background: url('imagesrhodesia1/bilharzia.jpg');
+  background-size: cover;
+  /* background-size: 540px 520px; */
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-89 /*catty*/
+{
+  background: url('imagesrhodesia1/cattapult.jpg');
+  background-size: cover;
+  background-size: 540px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-90 /*dumpy*/
+{
+  background: url('imagesrhodesia1/dumpy.jpg');
+  background-size: cover;
+  background-size: 540px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-91 /*dynamo*/
+{
+  background: url('imagesrhodesia1/dynamo.jpg');
+  background-size: cover;
+  background-size: 800px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-92 /*jamhotel*/
+{
+  background: url('imagesrhodesia1/jamesonhotel.jpg');
+  background-size: cover;
+  background-size: 600px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-93 /*mumsaid*/
+{
+  background: url('imagesrhodesia1/mumsaid.jpg');
+  background-size: cover;
+  background-size: 400px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-94 /*pencil*/
+{
+  background: url('imagesrhodesia1/pencil.jpg');
+  background-size: cover;
+  background-size: 400px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-95 /*phone*/
+{
+  background: url('imagesrhodesia1/phone.jpg');
+  background-size: cover;
+  background-size: 400px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-96 /*photos*/
+{
+  background: url('imagesrhodesia1/photos.jpg');
+  background-size: cover;
+  background-size: 400px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-97 /*quik*/
+{
+  background: url('imagesrhodesia1/quik.jpg');
+  background-size: cover;
+  background-size: 400px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-98 /*takkies*/
+{
+  background: url('imagesrhodesia1/takkies.jpg');
+  background-size: cover;
+  background-size: 400px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-99 /*yoyo*/
+{
+  background: url('imagesrhodesia1/yoyo.jpg');
+  background-size: cover;
+  background-size: 600px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-100 /*sparletta*/
+{
+  background: url('imagesrhodesia1/sparletta.jpg');
+  background-size: cover;
+  background-size: 500px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-101 /*christmas*/
+{
+  background: url('imagesrhodesia1/christmas.jpg');
+  background-size: cover;
+  background-size: 500px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-102 /*greatermans*/
+{
+  background: url('imagesrhodesia1/greatermans.jpg');
+  background-size: cover;
+  background-size: 800px 600px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-103 /*SA Oranje*/
+{
+  background: url('imagesrhodesia1/saoranje.jpg');
+  background-size: cover;
+  background-size: 800px 600px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-104 /*MUGABE CAPITAL*/
+{
+  background: url('imagesrhodesia1/mugabecapital.jpg');
+  background-size: cover;
+  background-size: 800px 540px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-105 /*DADS KETTLE*/
+{
+  background: url('imagesrhodesia1/kettle.jpg');
+  background-size: cover;
+  background-size: 800px 600px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-106 /*Car Of The Year*/
+{
+  background: url('imagesrhodesia1/caroftheyear.jpg');
+  background-size: cover;
+  background-size: 800px 600px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-107 /*Blankes*/
+{
+  background: url('imagesrhodesia1/blankes.jpg');
+  background-size: cover;
+  background-size: 800px 600px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-108 /*Schlitz*/
+{
+  background: url('imagesrhodesia1/schlitz.jpg');
+  background-size: cover;
+  background-size: 800px 560px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-109 /*Watneys*/
+{
+  background: url('imagesrhodesia1/watneys.jpeg');
+  background-size: cover;
+  background-size: 800px 540px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-110 /*Ryvita*/
+{
+  background: url('imagesrhodesia1/ryvita.jpg');
+  background-size: cover;
+  background-size: 800px 540px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-111 /*Prawn*/
+{
+  background: url('imagesrhodesia1/prawn.jpg');
+  background-size: cover;
+  background-size: 800px 650px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-112 /*Sunlight*/
+{
+  background: url('imagesrhodesia1/sunlight.jpg');
+  background-size: cover;
+  background-size: 800px 600px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-113 /*Quality*/
+{
+  background: url('imagesrhodesia1/quality.jpg');
+  background-size: cover;
+  background-size: 800px 550px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-114 /*Stork*/
+{
+  background: url('imagesrhodesia1/stork.jpg');
+  background-size: cover;
+  background-size: 800px 550px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-115 /*Crayola*/
+{
+  background: url('imagesrhodesia1/crayola.jpg');
+  background-size: cover;
+  background-size: 800px 550px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-116 /*Piri Piri*/
+{
+  background: url('imagesrhodesia1/piri.jpg');
+  background-size: cover;
+  background-size: 800px 550px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-117 /*Colony*/
+{
+  background: url('imagesrhodesia1/colony.jpg');
+  background-size: cover;
+  background-size: 800px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-118 /*Skates*/
+{
+  background: url('imagesrhodesia1/skates.jpg');
+  background-size: cover;
+  background-size: 800px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-119 /*Elastoplast*/
+{
+  background: url('imagesrhodesia1/elastoplast.jpg');
+  background-size: cover;
+  background-size: 800px 500px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-120 /*Veldskoeners*/
+{
+  background: url('imagesrhodesia1/veldskoen.jpg');
+  background-size: cover;
+  background-size: 800px 900px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-121 /*Swimming*/
+{
+  background: url('imagesrhodesia1/swimming.jpg');
+  background-size: cover;
+  background-size: 800px 520px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-122 /*Whiteman*/
+{
+  background: url('imagesrhodesia1/whiteman.jpg');
+  background-size: cover;
+  background-size: 800px 510px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+.item-123 /*Scoubidou*/
+{
+  background: url('imagesrhodesia1/scoubidou.jpg');
+  background-size: cover;
+  background-size: 800px 510px;
+  background-repeat:no-repeat;
+  background-position: center;
+}
+
+
+
+
+
+
+*:target ~ .item-1
+{
+  opacity: 0;
+}
+
+
+#item-1:target ~ .item-1
+{
+  opacity: 1;
+}
+
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3,
+#item-4:target ~ .item-4,
+#item-5:target ~ .item-5,
+#item-6:target ~ .item-6,
+#item-7:target ~ .item-7,
+#item-8:target ~ .item-8,
+#item-9:target ~ .item-9,
+#item-10:target ~ .item-10,
+#item-11:target ~ .item-11,
+#item-12:target ~ .item-12,
+#item-13:target ~ .item-13,
+#item-14:target ~ .item-14,
+#item-15:target ~ .item-15,
+#item-16:target ~ .item-16,
+#item-17:target ~ .item-17,
+#item-18:target ~ .item-18,
+#item-19:target ~ .item-19,
+#item-20:target ~ .item-20,
+#item-21:target ~ .item-21,
+#item-22:target ~ .item-22,
+#item-23:target ~ .item-23,
+#item-24:target ~ .item-24,
+#item-25:target ~ .item-25,
+#item-26:target ~ .item-26,
+#item-27:target ~ .item-27,
+#item-28:target ~ .item-28,
+#item-29:target ~ .item-29,
+#item-30:target ~ .item-30,
+#item-31:target ~ .item-31,
+#item-32:target ~ .item-32,
+#item-33:target ~ .item-33,
+#item-34:target ~ .item-34,
+#item-35:target ~ .item-35,
+#item-36:target ~ .item-36,
+#item-37:target ~ .item-37,
+#item-38:target ~ .item-38,
+#item-39:target ~ .item-39,
+#item-40:target ~ .item-40,
+#item-41:target ~ .item-41,
+#item-42:target ~ .item-42,
+#item-43:target ~ .item-43,
+#item-44:target ~ .item-44,
+#item-45:target ~ .item-45,
+#item-46:target ~ .item-46,
+#item-47:target ~ .item-47,
+#item-48:target ~ .item-48,
+#item-49:target ~ .item-49,
+#item-50:target ~ .item-50,
+#item-51:target ~ .item-51,
+#item-52:target ~ .item-52,
+#item-53:target ~ .item-53,
+#item-54:target ~ .item-54,
+#item-55:target ~ .item-55,
+#item-56:target ~ .item-56,
+#item-57:target ~ .item-57,
+#item-58:target ~ .item-58,
+#item-59:target ~ .item-59,
+#item-60:target ~ .item-60,
+#item-61:target ~ .item-61,
+#item-62:target ~ .item-62,
+#item-63:target ~ .item-63,
+#item-64:target ~ .item-64,
+#item-65:target ~ .item-65,
+#item-66:target ~ .item-66,
+#item-67:target ~ .item-67,
+#item-68:target ~ .item-68,
+#item-69:target ~ .item-69,
+#item-70:target ~ .item-70,
+#item-71:target ~ .item-71,
+#item-72:target ~ .item-72,
+#item-73:target ~ .item-73,
+#item-74:target ~ .item-74,
+#item-75:target ~ .item-75,
+#item-76:target ~ .item-76,
+#item-77:target ~ .item-77,
+#item-78:target ~ .item-78,
+#item-79:target ~ .item-79,
+#item-80:target ~ .item-80,
+#item-81:target ~ .item-81,
+#item-82:target ~ .item-82,
+#item-83:target ~ .item-83,
+#item-84:target ~ .item-84,
+#item-85:target ~ .item-85,
+#item-86:target ~ .item-86,
+#item-87:target ~ .item-87,
+#item-88:target ~ .item-88,
+#item-89:target ~ .item-89,
+#item-90:target ~ .item-90,
+#item-91:target ~ .item-91,
+#item-92:target ~ .item-92,
+#item-93:target ~ .item-93,
+#item-94:target ~ .item-94,
+#item-95:target ~ .item-95,
+#item-96:target ~ .item-96,
+#item-97:target ~ .item-97,
+#item-98:target ~ .item-98,
+#item-99:target ~ .item-99,
+#item-100:target ~ .item-100,
+#item-101:target ~ .item-101,
+#item-102:target ~ .item-102,
+#item-103:target ~ .item-103,
+#item-104:target ~ .item-104,
+#item-105:target ~ .item-105,
+#item-106:target ~ .item-106,
+#item-107:target ~ .item-107,
+#item-108:target ~ .item-108,
+#item-109:target ~ .item-109,
+#item-110:target ~ .item-110,
+#item-111:target ~ .item-111,
+#item-112:target ~ .item-112,
+#item-113:target ~ .item-113,
+#item-114:target ~ .item-114,
+#item-115:target ~ .item-115,
+#item-116:target ~ .item-116,
+#item-117:target ~ .item-117,
+#item-118:target ~ .item-118,
+#item-119:target ~ .item-119,
+#item-120:target ~ .item-120,
+#item-121:target ~ .item-121,
+#item-122:target ~ .item-122,
+#item-123:target ~ .item-123
+
+
+
+
+
+
+
+
+
+{
+  z-index: 3;
+  opacity: 1;
+}
+
+
+ h2.thinking /*#1*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 24%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px; /*Places marquee inside image*/
+}
+
+
+h2.rocks /*#2*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.baobab /*#3*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.ruins /*#4*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.aircraft /*#5*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.wedding /*#6*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.ellis /*#7*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.karen /*#8*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.matches /*#9*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.leslie1 /*#10*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.MGH /*#11*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.castle /*#12*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.haddon /*#13*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.mabel /*#14*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.airport1 /*#15*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.kariba /*#16*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.bsap /*#17*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.sin /*#18*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.vic /*#19*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.umtali /*#20*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.chim /*#21*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.llager /*#22*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.rail /*#23*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.rr /*#24*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.wool /*#25*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.vic1 /*#26*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.shona /*#27*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.rose /*#28*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.rose1 /*#29*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.steam /*#30*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.pol /*#31 */
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.jameson /*#32*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.mermaids /*33*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.elephant /*#34*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.braai /*#35*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.avenue /*#36*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.airport /*#37*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.barbours /*#38*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.bsap1 /*#39*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.castle2 /*#40*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.cecil /*#41*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.church /*#42*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.dollars /*#43*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.dollars1 /*#44*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.chinese5 /*#45*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.flame /*#46*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.hal /*#47*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.herald /*#48*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.jackar /*#49*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+  h2.prickly /*#50*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.icecream /*#51*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.lottery /*#52*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.mabpool /*#53*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.meikles /*#54*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.mugabe /*#55*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.nuway /*#56*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.inyanga /*#57*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.pearl /*#58*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.petrolpump /*#59*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.penny /*#60*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.tikki /*#61*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.museum /*#62*/
+  {
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    z-index: 20;
+    color: yellow;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-size: 2.5em;
+    bottom: -8px;
+  }
+
+
+h2.firststreet /*#63*/
+  {
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    z-index: 20;
+    color: yellow;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-size: 2.5em;
+    bottom: -8px;
+  }
+
+
+h2.fereday /*#64*/
+  {
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    z-index: 20;
+    color: yellow;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-size: 2.5em;
+    bottom: -8px;
+  }
+
+
+h2.granadilla /*#65*/
+  {
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    z-index: 20;
+    color: yellow;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-size: 2.5em;
+    bottom: -8px;
+  }
+
+
+h2.gemsquash /*#66*/
+  {
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    z-index: 20;
+    color: yellow;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-size: 2.5em;
+    bottom: -8px;
+  }
+
+
+h2.hubbly /*#67*/
+  {
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    z-index: 20;
+    color: yellow;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-size: 2.5em;
+    bottom: -8px;
+  }
+
+
+h2.koolaid/*#68*/
+  {
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    z-index: 20;
+    color: yellow;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-size: 2.5em;
+    bottom: -8px;
+  }
+
+
+h2.mazoe /*#69*/
+  {
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    z-index: 20;
+    color: yellow;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-size: 2.5em;
+    bottom: -8px;
+  }
+
+
+h2.panasonic /*#70*/
+  {
+    position: absolute;
+    bottom: 10%;
+    left: 37%;
+    z-index: 20;
+    color: yellow;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    font-size: 2.5em;
+    bottom: -8px;
+  }
+
+
+h2.george /*#71*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.inyan /*#72*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.billion /*#73*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.tartar /*#74*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.chibuku /*#75*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.carling /*#76*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.prefab /*#77*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.andrews /*#78*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.camp /*#79*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.germ /*#80*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.vim /*#81*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.baby /*#82*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.pk /*#83*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.quink /*#84*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.blade /*#85*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.turntable /*#86*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.mateus /*#87*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.bilharzia /*#88*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.catty /*#89*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.dumpy /*#90*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.dynamo /*#91*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.jamhotel /*#92*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.mumsaid /*#93*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.pencil /*#94*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.phone /*#95*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.photos /*#96*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.quik /*#97*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.takkies /*#98*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.yoyo /*#99*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.sparletta /*#100*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.christmas /*#101*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.greatermans /*#102*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.saoranje /*#103*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.mugabecapital /*#104*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.dadskettle /*#105*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.caroftheyear /*#106*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.blankes /*#107*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.schlitz /*#108*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.watneys /*#109*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.ryvita /*#110*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.prawn /*#111*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.sunlight /*#112*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.quality /*#113*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.stork /*#114*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.crayola /*#115*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.piri /*#116*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.colony /*#117*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.skates /*#118*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.elastoplast /*#119*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.veldskoen /*#120*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.swimming /*#121*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.whiteman /*#122*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+h2.scoubidou /*#123*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: yellow;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -8px;
+}
+
+
+
+
+
+
+
+
+
+/*CAROUSEL BUTTON */
+
+.carousel-button
+{
+position: absolute;
+z-index: 2;
+background: none;
+border: none;
+font-size: 3.5rem;
+top: 55%;
+transform: translateY(-50%);
+color: rgba(255, 255, 255, .5);
+cursor: pointer;
+border-radius: .25rem;
+/* padding: 0 .5rem 0 .5rem; */
+padding: 0px 5px 0px 5px;
+/* padding-top: -10px; */
+
+background-color: rgba(0 , 0 , 0 , .3);
+}
+
+
+.carousel-button:hover,
+.corousel-button:focus
+{
+color: white;
+background-color: rgba(0 , 0 , 0 , .6);
+border: 2px solid floralwhite;
+}
+
+
+.corousel-button:focus
+{
+/* outline: 2px solid black; */
+}
+
+
+.carousel-button.prev
+{
+position: fixed;
+left: 200px;
+
+}
+
+
+.carousel-button.next
+{
+position: fixed;
+right: 260px;
+}
+
+
+
+
+/*
+======================================================================= */
+
+              /*Footer */
+
+
+p.allfooter
+{
+  position: fixed;
+  padding: 1px 10px 50px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 10px;
+  text-align: center;
+  background: black;
+  color: cadetblack;
+  /* margin-left: 10px; */
+
+}
+
+/* ALL p::first-letter */
+p.allfooter::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px red;
+}
+
+          /* Close Footer */
+
+/* ======================================================================= */

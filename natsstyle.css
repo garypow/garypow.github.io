@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&family=Lobster&family=Courgette&family=Lobster+Two&family=Great+Vibes&family=Dancing+Script&family=Great+Vibes&family=Oleo+Script&family=Marck+Script&family=Parisienne&family=Poppins&family=Noto+Sans+SC&family=Tangerine&display=swap');
+
+
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Menu Bar */
+
+/* Menu Bar background colour */
+.menu-bar
+{
+  background: rgb(0,100,0);
+  text-align: center;   
+}
+
+/* Displays the menu side by side in-line flex */
+.menu-bar ul
+{
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+.menu-bar ul li
+{
+  width: 175px;/* Adjusts the width of the menu */
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu-bar ul li a
+{
+  text-decoration: none;
+  color: #fff;
+}
+
+.active, .menu-bar ul li:hover
+{
+  background: #2bab0d;
+  border-radius: 3px;
+}
+
+.menu-bar .fa
+{
+  margin-left: 8px;
+}
+
+.menu-bar .fas
+{
+  margin-left: 8px;
+}
+
+.sub-menu-1
+{
+  display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+  display: block;
+  position: absolute;
+  background: rgb(0, 100, 0);
+  margin-top: 10px;
+  margin-left: -10px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+  display: block;
+  margin: 10px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+  width: 200px;
+  padding: 10px; /*Adjusts the width of the pull down munu*/
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;/*No border*/
+  text-align: left; /*Aligns the li text left*/
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+  border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+  color: #b2ff00;
+}
+
+.fa-angle-left
+{
+  float: left;
+}
+
+.sub-menu-2
+{
+  display: none;
+}
+
+.hover-me:hover .sub-menu-2
+{
+  position: absolute;
+  display: block;
+  margin-top: -38px;
+  margin-left: -250px;
+  background-color: rgba(0,100,0);
+}
+
+.hover-me:hover .sub-menu-3
+{
+  position: absolute;
+  display: block;
+  margin-top: -38px;
+  margin-left: 160px;
+  background-color: rgba(0,100,0);
+}
+
+                /* Close Menu Bar */
+
+/* ======================================================================= */
+
+.natsclassbody
+{
+  background-image: url(images/sky2.jpg);
+  background-size: cover;
+  background-position: relative;
+  background-repeat: no-repeat;
+  /* font-family: sans-serif; */
+}
+
+.licence
+{
+  text-align: center;
+}
+
+.pnatsclass 
+{
+  margin: 10px;
+  font-size:20px;
+}
+
+h2
+{
+  margin: 10px;
+  color: #556B2F;
+}
+
+a
+{
+  margin: 5px;
+}
+
+/* ======================================================================= */
+
+            /* Footer */
+
+/* p.allfooter */
+p.allfooter
+{
+  position: fixed;
+  padding: 1px 10px 50px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 10px;
+  text-align: center;
+  background: black;
+  color: cadetblue;
+
+}
+
+/* p.allfooter::first-letter */
+p.allfooter::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px red;
+}
+
+                    /* Close Index Footer */
+
+/* ======================================================================= */
+
+
+.offscreen
+{
+position: absolute;
+left: -10000px;
+}
+
+.nowrap
+{
+white-space: nowrap;
+}
+
+/* p.center
+{
+  font-size: 1.7em;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+} */

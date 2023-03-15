@@ -1,0 +1,472 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&family=Lobster&family=Courgette&family=Lobster+Two&family=Great+Vibes&family=Dancing+Script&family=Great+Vibes&family=Oleo+Script&family=Marck+Script&family=Parisienne&family=Poppins&family=Noto+Sans+SC&family=Tangerine&display=swap');
+
+*
+{
+  padding: 0;
+  margin: 0;/*Comment*/
+  box-sizing: border-box;
+}
+
+                            /* Menu Bar */
+
+.menu-bar
+{
+background: rgb(0,100,0);
+text-align: center;
+
+}
+
+.menu-bar ul
+{
+
+display: inline-flex;
+list-style: none;
+color: #fff;
+}
+
+.menu-bar ul li
+{
+width: 175px;
+margin: 10px;
+padding: 10px;
+}
+
+.menu-bar ul li a
+{
+text-decoration: none;
+color: #fff;
+}
+
+.active, .menu-bar ul li:hover
+{
+background: #2bab0d;
+border-radius: 3px;
+}
+
+.menu-bar .fa
+{
+margin-left: -8px;
+}
+
+.menu-bar .fas
+{
+margin-left: -8px;
+}
+
+.sub-menu-1
+{
+display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+display: block;
+position: absolute;
+background: rgb(0, 100, 0);
+margin-top: 10px;
+margin-left: -10px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+display: block;
+margin: 10px;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+width: 200px;
+padding: 10px; /*Adjusts the width of the pull down munu*/
+border-bottom: 1px dotted #fff;
+background: transparent;
+border-radius: 0;/*No border*/
+text-align: left; /*Aligns the li text left*/
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+color: #b2ff00;
+}
+
+.fa-angle-left
+{
+float: left;
+}
+
+.sub-menu-2
+{
+display: none;
+}
+
+.hover-me:hover .sub-menu-2
+{
+position: absolute;
+display: block;
+margin-top: -38px;
+margin-left: -250px;
+background-color: rgba(0,100,0);
+}
+
+.hover-me:hover .sub-menu-3
+{
+position: absolute;
+display: block;
+margin-top: -38px;
+margin-left: 160px;
+background-color: rgba(0,100,0);
+}
+
+                        /* Close Menu Bar */
+
+/* ======================================================================= */
+
+                        /* BODY*/
+
+
+body.cartoonsclass
+{
+  position: fixed;
+  background: #2f4f4f;
+  /* margin: 0; */
+  /* position: relative; */
+  inset: 0;
+  /* bottom: -20px; */
+}
+
+                        /* Close BODY*/
+/* ======================================================================= */
+
+
+                      /* H1*/
+
+h1
+{
+
+  background: linear-gradient(to right, white, grey);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  font-family: 'Poppins';
+
+  /* margin-bottom: 0; */
+  /* position: absolute; */
+  margin-top: -10px;
+   /* left: 43%; */
+  /* z-index: 1; */
+}
+                        /* Close H1*/
+
+/* ======================================================================= */
+
+
+
+.cartoon-wrapper
+{
+  top: -52px; /*Moves the whole wrapper down*/
+  height: 500px;
+  position: relative;
+  width: 800px;
+  display: block;
+  margin: 50px auto ;
+  border: 2px solid white;
+  z-index: -1;
+}
+
+
+.cartoon-item
+{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.arrow
+{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+
+}
+
+
+.arrow-prev
+{
+  left: -50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(135deg);
+
+}
+
+
+.arrow-next
+{
+  right: -50px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+
+[id^= "item"]
+{
+  display: none;
+}
+
+
+
+
+.item-1 /*Bowls*/
+{
+  z-index: 2;
+  opacity: 1;
+  background: url('cartoons/bowls.jpg');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+
+.item-2 /*Economic*/
+{
+  background: url('cartoons/economic.jpg');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+
+}
+.item-3 /*Sheep*/
+{
+  background: url('cartoons/sheep.jpg');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+
+.item-4 /*Eggs*/
+{
+  background: url('cartoons/eggs.jpg');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+
+.item-5 /*Congress*/
+{
+
+  background: url('cartoons/congress.jpg');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+
+.item-6 /*Bounder*/
+{
+  background: url('cartoons/bounder.jpg');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+
+.item-7 /*Glitter*/
+{
+  background: url('cartoons/glitter.jpg');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+
+.item-8 /*Talks*/
+{
+  background: url('cartoons/talks.jpg');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+
+.item-9 /*Peace*/
+{
+  background: url('cartoons/peace.png');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+
+.item-10 /*RIP*/
+{
+  background: url('cartoons/rip.jpg');
+  background-size: 800px 500px;
+  background-repeat: no-repeat;
+}
+
+
+*:target ~ .item-1
+{
+  opacity: 0;
+}
+
+
+#item-1:target ~ .item-1
+{
+  opacity: 1;
+}
+
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3,
+#item-4:target ~ .item-4,
+#item-5:target ~ .item-5,
+#item-6:target ~ .item-6,
+#item-7:target ~ .item-7,
+#item-8:target ~ .item-8,
+#item-9:target ~ .item-9,
+#item-10:target ~ .item-10
+
+
+
+{
+  z-index: 3;
+  opacity: 1;
+}
+
+
+ h2.bowls /*#1*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 24%;
+  z-index: 20;
+  color: orange;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -50px; /*Places marquee inside image*/
+}
+
+
+h2.economic /*#2*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 35%;
+  z-index: 20;
+  color: orange;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -50px;
+}
+
+
+h2.sheep /*#3*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: orange;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -50px;
+}
+
+
+h2.eggs /*#4*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: orange;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -50px;
+}
+
+
+h2.congress /*#5*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: orange;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -50px;
+}
+
+
+h2.bounder /*#6*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: orange;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -50px;
+}
+
+
+h2.glitter /*#7*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: orange;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -50px;
+}
+
+h2.talks /*#8*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: orange;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -50px;
+}
+
+
+h2.peace /*#9*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 20%;
+  z-index: 20;
+  color: orange;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -50px;
+}
+
+
+h2.rip /*#10*/
+{
+  position: absolute;
+  bottom: 10%;
+  left: 37%;
+  z-index: 20;
+  color: orange;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 2.5em;
+  bottom: -50px;
+}

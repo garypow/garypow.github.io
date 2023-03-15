@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&family=Lobster&family=Courgette&family=Lobster+Two&family=Great+Vibes&family=Dancing+Script&family=Great+Vibes&family=Oleo+Script&family=Marck+Script&family=Parisienne&family=Poppins&family=Noto+Sans+SC&family=Tangerine&display=swap');
+
+
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+                      /* Menu Bar */
+
+/* Menu Bar background colour */
+  .menu-bar
+  {
+    background: rgb(0,100,0);
+    text-align: center;   
+  }
+
+  /* Displays the menu side by side in-line flex */
+  .menu-bar ul
+  {
+    display: inline-flex;
+    list-style: none;
+    color: #fff;
+  }
+
+  /* Spans the width of the menu bar across the page */
+  .menu-bar ul li
+  {
+    width: 180px;/*Adjusts the width of the menu 205*/
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .menu-bar ul li a
+  {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .active, .menu-bar ul li:hover
+  {
+    background: #2bab0d;
+    border-radius: 3px;
+  }
+
+  .menu-bar .fa
+  {
+    margin-left: 8px;
+  }
+
+  .menu-bar .fas
+  {
+    margin-left: 8px;
+  }
+
+  .sub-menu-1
+  {
+    display: none;
+  }
+
+  .menu-bar ul li:hover .sub-menu-1
+  {
+    display: block;
+    position: absolute;
+    background: rgb(0, 100, 0);
+    margin-top: 10px;
+    margin-left: -10px;
+
+  }
+
+  .menu-bar ul li:hover .sub-menu-1 ul
+  {
+    display: block;
+    margin: 10px;
+
+  }
+
+  /* Adjusts the width of pull down li's */
+  .menu-bar ul li:hover .sub-menu-1 ul li
+  {
+    width: 200px;/* 300px */
+    padding: 10px; /*Adjusts the width of the pull down munu*/
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;/*No border*/
+    text-align: left; /*Aligns the li text left*/
+  }
+
+  .menu-bar ul li:hover .sub-menu-1 ul li:last-child
+  {
+    border-bottom: none;
+  }
+
+  .menu-bar ul li:hover .sub-menu-1 ul li a:hover
+  {
+    color: #b2ff00;
+  }
+
+  .fa-angle-left
+  {
+    float: left;
+  }
+
+  .sub-menu-2
+  {
+    display: none;
+  }
+
+  .hover-me:hover .sub-menu-2
+  {
+    position: absolute;
+    display: block;
+    margin-top: -38px;
+    margin-left: -250px;
+    background-color: rgba(0,100,0);
+  }
+
+  .hover-me:hover .sub-menu-3
+  {
+    position: absolute;
+    display: block;
+    margin-top: -38px;
+    margin-left: 160px;
+    background-color: rgba(0,100,0);
+  }
+
+                  /* Close Menu Bar */
+
+/* ======================================================================= */
+
+  /*  section.hero */
+  section.hero
+  {
+    position: relative;
+  }
+ 
+  /* ALL showWelcome */
+  @keyframes showWelcome
+  {
+    0%
+    {
+    top: -20px;
+    transform: skew(0deg, -5deg) scaleY(0);
+    }
+ 
+    80%
+    {
+    top: 30px;
+    transform: skew(10deg, -5deg) scaleY(1.2);
+    }
+ 
+    100%
+    {
+    top: 20px;
+    transform: skew(-10deg, -5deg) scaleY(1);
+    }
+  }    
+
+
+  /* Index HERO h2.hero__h2 */
+  h2.hero__h2
+  {
+    /* background-color: green; */
+    color: black;
+    padding: 0.25em 0.5em;
+    text-shadow: 2px 2px 5px var(--BORDER-COLOR);
+    position: absolute;
+    top: -200px;
+    left: 20px;
+    animation: showWelcome 2s ease-in-out 1s forwards;
+  }
+
+   /* New ALL .hero__h2::first-letter */
+   .hero__h2::first-letter
+   {
+   font-size: 50px;
+   color: blue;
+   text-shadow: 2px 2px orange;
+   }
+  
+                          /* Close Index Hero */
+  
+  /* ======================================================================= */
+
+  /*Index Main Image (me)*/
+
+/* img.imgclassme3 (Main image) */
+img.imgclassme3
+{
+width: 250px;
+/* height: 250px; */
+margin: 25px;/*Margin from Prince to text*/
+border: 3px solid white;
+box-shadow: 3px 3px grey;
+border-radius: 50%;
+shape-outside: circle();/*Shapes the text into circle*/
+float:left;/*Floats the text to the left*/
+padding: 15px;/*Pushes the border out */
+}
+
+               /* Close Index Main Image (me) */
+
+/* ======================================================================= */
+
+                    /* H1*/
+.h1weightgainers
+{
+  background: linear-gradient(to right, grey, black);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  text-align: center;
+  /* font-family: Nunito; */
+  /* font-family: Lobster; */
+  /* font-family: Dancing Script; */
+  /* font-family: Courgette; */
+  /* font-family: Great Vibes; */
+  /* font-family: Oleo Script; */
+  /* font-family: Marck Script; */
+  /* font-family: Tangerine; */
+  /* font-family: Parisienne; */
+  font-family: Poppins;
+}
+                    
+                        /*Close h1*/
+    
+/* ======================================================================= */
+
+/* tributebody*/
+
+body.tributebody
+{
+  background-image: linear-gradient( to right,lightseagreen, lightgreen);
+}
+
+            /*Close tributebody*/
+
+/* ======================================================================= */
+
+.wrapper
+{
+  display: inline-flex;
+}
+
+/* Our Mate..The Good Old Spud */
+.wrapper .static-txt
+{ 
+  color: darkblue;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-left: 5px;
+  
+}
+
+.wrapper .dynamic-txts
+{
+  margin-left: 15px;
+  height: 80px;
+  line-height: 90px;
+  
+  overflow: hidden;
+}
+
+/* Delicious moving */
+.dynamic-txts li
+{
+  list-style: none;
+  color: crimson;
+  font-size: 30px;/* This one */
+  font-weight: 500;
+  position: relative;
+  top: -20px;
+  animation: slide 24s steps(4) infinite;
+}
+
+@keyframes slide
+{
+  50%
+  {
+    top: -360px;
+  }
+}
+
+.dynamic-txts li span
+{
+  position: relative;
+  margin: 5px 0;
+  line-height: 90px; 
+}
+
+.dynamic-txts li span::after
+{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid #FC6D6D;
+  animation: typing 3s steps(12) infinite;
+}
+
+@keyframes typing 
+{
+  40%, 60%
+  {
+    left: calc(100% + 30px);
+  }
+  100%
+  {
+    left: 0;
+  }
+}
+
+h2
+{
+  color: darkblue;
+}
+
+h2 span
+{
+font-size: 3em;
+color: darkblue;
+margin-top: 10px;
+
+}
+
+.spanpotato
+{
+  font-size: 2.5rem;
+  color: black;
+  font-style: italic;
+}
+
+/* p comments & feedback */
+.comments
+{
+  font-size: 2rem;
+  color: crimson;
+  text-align: center;
+}
+
+/* p comments & feedback */
+.comments::first-letter
+{
+  font-size: 3rem;
+  color: brown;
+}
+
+/* Phyliss */
+.memberscomments
+{
+  list-style: none;
+  color: blue;
+  font-size: 1.5rem;
+  margin-left: 5px;
+}
+
+/* imgclass" src = "images/beforeafter */
+.imgclass
+{
+  height: 400px;
+  width: 600px;
+  border: 2px solid black;
+  margin-left: 33%;
+}
+
+/* .divclass Fattys Image */
+.divclass
+{
+  height: 780px;
+  width: 880px;
+  background-image: url(images/fattys.png);
+  position: relative;
+  /* margin-top: 165px; */
+  border: 3px solid black;
+  border-radius: 50%;
+  animation: movingfattys 25s infinite;
+}
+
+@keyframes movingfattys
+{
+  0% 
+  {
+    left: 0;
+  }
+  50% 
+  {
+    left: 550px;
+  }
+  100%
+  {
+    left: 0;
+  } 
+}
+
+hr
+{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 15px;
+  color: gold;
+  background-color: teal;
+}
+
+/* Footer */
+
+/* p.allfooter */
+p.allfooter
+{
+  position: fixed;
+  padding: 1px 10px 50px 10px;
+  bottom: 0;
+  width: 100%;
+  /* Height of the footer*/
+  height: 10px;
+  text-align: center;
+  background: black;
+  color: cadetblue;
+
+}
+
+/* p.allfooter::first-letter */
+p.allfooter::first-letter
+{
+  font-size: 2.5rem;
+  text-shadow: 3px 3px red;
+}
+
+                    /* Close Footer */
+
+/* ======================================================================= */
+
+/* UTILITY CLASSES */
+
+.offscreen
+{
+position: absolute;
+left: -10000px;
+}
+
+.nowrap
+{
+white-space: nowrap;
+}
+
+p.center
+{
+  font-size: 1.7em;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+}
+
+                          /* Close UTILITY CLASSES */
+
+/* ======================================================================= */
+
+.text-box
+{
+  /* margin-top: 15%; */
+  font-size: 14px;
+  letter-spacing: 1px;
+  /* line-height: 26px; */
+}
+
+.h1textbox
+{
+  /* background: linear-gradient(to right, grey, black);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; */
+  font-size: 40px;
+  text-align: left;
+  margin-left: 5px;  
+}
+
+.auto-input
+{
+  color: brown;
+}
+
+
+.fatclass
+{
+  font-size: 24px;
+  color: black;
+  text-align: left;
+  margin: 5px;
+}
+
+/*ABOUT p.aboutclass1  */
+p.aboutclass1
+{
+margin-top: 30px;
+text-align: center;
+font-size: 1.5rem;
+}
+
+.builtpotatoes
+{
+  font-size: 24px;
+  text-align: center;
+}
+
