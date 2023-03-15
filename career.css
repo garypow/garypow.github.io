@@ -139,7 +139,12 @@ body.careerbody
                         /* Close BODY*/
 /* ======================================================================= */
 
-.nolink, a
+.nolink
+{
+  color: blue;
+}
+
+a
 {
   color: blue;
 }
