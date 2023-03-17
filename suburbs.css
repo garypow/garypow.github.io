@@ -236,3 +236,9 @@
   color: white;
   cursor: pointer;
 }
+
+p
+{
+  font-size: 2rem;
+  color: red;
+}
