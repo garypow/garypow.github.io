@@ -330,7 +330,7 @@ text-align: center;
   position: relative;
 }
 
-.nolink
+a.nolink
 {
   color: blue;
 }
