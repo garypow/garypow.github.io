@@ -330,6 +330,11 @@ text-align: center;
   position: relative;
 }
 
+.nolink
+{
+  color: blue;
+}
+
 /* NEW Interest .hover_over_the_link a.nolink span */
 .hover_over_the_link a.nolink span
 {
