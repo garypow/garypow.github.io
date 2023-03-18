@@ -331,7 +331,7 @@ text-align: center;
   position: relative;
 }
 
-a.nolink, nixieclass
+a.nolink, .nixieclass
 {
   color: blue;
 }
