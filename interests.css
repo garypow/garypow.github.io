@@ -341,6 +341,11 @@ a.nixieclass
   color: blue;
 }
 
+a.stapclass
+{
+  color: blue;
+}
+
 /* NEW Interest .hover_over_the_link a.nolink span */
 .hover_over_the_link a.nolink span
 {
