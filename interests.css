@@ -276,6 +276,7 @@ height: 200px;/*Height of img*/
 border: 2px solid gold;
 float:left;/*Floats the text to the left*/
 margin: 10px;/*Margin from img to text*/
+margin-left: 400px;
 }
 
 
