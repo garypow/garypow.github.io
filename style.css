@@ -761,13 +761,13 @@ text-align: center;
   margin-left: 630px;
 }
 
-a.prefabclass 
+.prefabclass 
 {
   display: none;
   padding-left: 30px;
 {
   
-a.prefabclass:hover 
+.prefabclass:hover 
 {
   display: none;
   padding-left: 30px;
@@ -983,7 +983,7 @@ h2
 
 a
 {
-  color: blue
+  color: blue;
 }
 
 p
