@@ -761,13 +761,13 @@ text-align: center;
   margin-left: 630px;
 }
 
-.prefabclass a
+a.prefabclass 
 {
   display: none;
   padding-left: 30px;
 {
   
-.prefabclass:hover a
+a.prefabclass:hover 
 {
   display: none;
   padding-left: 30px;
