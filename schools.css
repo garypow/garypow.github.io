@@ -370,6 +370,7 @@ p.allfooter::first-letter
  
  p.center
  {
+   background-color: red;
    font-size: 1.7em;
    text-align: center;
    padding-top: 20px;
