@@ -248,7 +248,7 @@ body.musicbody
 
 
  /* music p.musicclass */
- p.musicclass
+ .musicclass
  {
  font-size: 1.5rem;
  margin-top: 20px;
@@ -258,7 +258,7 @@ body.musicbody
  }
 
 /* music p.musicclass::first-letter */
-p.musicclass::first-letter
+.musicclass::first-letter
 {
   font-size: 2.5rem;
   text-shadow: 3px 3px orange;
