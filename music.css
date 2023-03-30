@@ -8,7 +8,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-                      /* Schools Menu Bar */
+                      /* Music Menu Bar */
 
   .menu-bar
   {
@@ -125,11 +125,11 @@
     background-color: rgba(0,100,0);
   }
 
-                  /* Close Schools Menu Bar */
+                  /* Close Music Menu Bar */
 
 /* ======================================================================= */
 
-                        /* Schools Hero */
+                        /* Music Hero */
 
   /* New ALL section.hero */
  section.hero
@@ -160,7 +160,7 @@
  }
 
 
-/* Schools HERO h2.hero__h2 */
+/* Music HERO h2.hero__h2 */
  h2.hero__h2
  {
    /* background-color: green; */
@@ -173,7 +173,7 @@
    animation: showWelcome 2s ease-in-out 1s forwards;
  }
 
- /* Schools .hero__h2::first-letter */
+ /* Music .hero__h2::first-letter */
  .hero__h2::first-letter
  {
  font-size: 50px;
@@ -185,7 +185,7 @@
 
 /* ======================================================================= */
 
-                /*Schools Main Image (me)*/
+                /*Music Main Image (me)*/
 
 /* img.imgclassme3 (Main image) */
 img.imgclassme3
@@ -201,11 +201,11 @@ float:left;/*Floats the text to the left*/
 padding: 15px;/*Pushes the border out */
 }
 
-               /* Close Schools Main Image (me) */
+               /* Close Music Main Image (me) */
 
 /* ======================================================================= */
 
-                        /* Schools H1*/
+                        /* Music H1*/
  h1
  {
    background: linear-gradient(to right, grey, black);
@@ -224,31 +224,31 @@ padding: 15px;/*Pushes the border out */
    font-family: Poppins;
  }
 
-                    /*Close Schools h1*/
+                    /*Close Music h1*/
 
 /* ======================================================================= */
 
 
-                  /* Schools body*/
+                  /* Music body*/
 
- /* body.schoolsbody*/                 
-body.schoolsbody
+ /* body.musicbody*/                 
+body.musicbody
 {
   background-image: linear-gradient( to right,lightseagreen, lightgreen);
   padding-bottom: 10px;/*For "Top" btn*/
 }
 
 
-                /*Close Schools body*/
+                /*Close Music body*/
 
 /* ======================================================================= */
 
 
-                    /*Schools p*/
+                    /*Music p*/
 
 
- /* school p.schoolclass */
- p.schoolclass
+ /* music p.musicclass */
+ p.musicclass
  {
  font-size: 1.5rem;
  margin-top: 20px;
@@ -257,8 +257,8 @@ body.schoolsbody
  text-align: left;
  }
 
-/* school p.schoolclass::first-letter */
-p.schoolclass::first-letter
+/* music p.musicclass::first-letter */
+p.musicclass::first-letter
 {
   font-size: 2.5rem;
   text-shadow: 3px 3px orange;
@@ -266,12 +266,12 @@ p.schoolclass::first-letter
 
  
 
-                  /* Close Schools p */
+                  /* Close music p */
 
 /* ======================================================================= */
 
 
-                  /* Schools span */
+                  /* music span */
 
 span
 {
@@ -280,11 +280,11 @@ span
   
 }
 
-                /*Close Schools span */
+                /*Close Music span */
 
 /* ======================================================================= */
           
-                      /* Schools Footer */
+                      /* Music Footer */
           
 /* p.allfooter */
 p.allfooter
@@ -308,19 +308,19 @@ p.allfooter::first-letter
   text-shadow: 3px 3px red;
 }
 
-                      /* Close Schools Footer */
+                      /* Close Music Footer */
           
 /* ======================================================================= */
 
-              /* Home Schools */
+              /* Home Music */
 
-/* Schools div.hover_over_the_link a */
+/* Music div.hover_over_the_link a */
 .hover_over_the_link.nolink
 {
   position: relative;
 }
 
-/* Schools .hover_over_the_link a span */
+/* Music .hover_over_the_link a span */
 .hover_over_the_link a.nolink span
 {
   position:absolute;
@@ -328,7 +328,7 @@ p.allfooter::first-letter
   z-index:99;
 }
 
-/* Schools div.hover_over_the_link a:hover span ( Tooltip)  */
+/* Music div.hover_over_the_link a:hover span ( Tooltip)  */
 .hover_over_the_link a:hover  span 
 {
   display:block;
@@ -350,7 +350,7 @@ p.allfooter::first-letter
   /* top: 65px; */
   text-indent: 5px;
 }
-                      /* Close Schools */
+                      /* Close Music */
 
 /* ======================================================================= */
 
