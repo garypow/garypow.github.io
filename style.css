@@ -236,7 +236,7 @@ body.indexbody
 
 
  /* p.indexclass */
-p.indexclass
+.indexclass
 {
   font-size: 1.5rem;
   margin-left: 5px;
@@ -245,14 +245,14 @@ p.indexclass
 }
 
 /* p.indexclass::first-letter */
-p.indexclass::first-letter
+.indexclass::first-letter
 {
   font-size: 2.5rem;
   text-shadow: 3px 3px orange;
 }
 
  /* p.indexclass1 */
-p.indexclass1
+.indexclass1
 {
   font-size: 1.5rem;
   /* margin-top: 20px; */
@@ -262,7 +262,7 @@ p.indexclass1
 }
 
 /* p.indexclass1::first-letter */
-p.indexclass1::first-letter
+.indexclass1::first-letter
 {
   font-size: 2.5rem;
   text-shadow: 3px 3px orange;
